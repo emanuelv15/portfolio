@@ -2,7 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   :root {
-    --mainColor: #15023a;
+    /* --mainColor: #15023a; */
+    --background-dark: #082032;
+    --mainColor: #FF4C29;
+    --secondaryColor: #334756;
+    --tertiaryColor: #2C394B;
+
   }
 
   * {
@@ -28,7 +33,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #fff;
+    background: var(--background-dark);
     color: #FFF;
     -webkit-font-smoothing: antialiased;
   }

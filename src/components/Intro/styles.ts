@@ -2,26 +2,31 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--backgroundDark);
 `;
 
 export const Left = styled.div`
   flex: 0.5;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 
   .imgContainer {
-    margin-top: 15px;
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     background-color: var(--secondaryColor);
     border-radius: 50%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    float: right;
 
     img {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       height: 90%;
     }
   }
@@ -30,6 +35,8 @@ export const Left = styled.div`
 export const Right = styled.div`
   flex: 0.5;
   position: relative;
+  width: 100%;
+  height: 100%;
 `;
 
 export const Wrapper = styled.div`
@@ -75,11 +82,11 @@ export const Wrapper = styled.div`
 
 export const Down = styled.a`
   position: absolute;
-  bottom: 10px;
+  bottom: 1%;
   left: 40%;
 
   img {
-    width: 30px;
+    width: 35px;
     animation: arrowBlink 3s infinite;
   }
 

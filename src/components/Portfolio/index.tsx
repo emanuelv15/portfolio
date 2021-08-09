@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 
 import {
-  featuredPortfolio,
-  webPortfolio,
+  frontPortfolio,
   mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  backPortfolio,
+  otherPortfolio,
 } from "../../services/data";
 import { PortfolioList } from "../PortfolioList";
 
@@ -14,44 +13,62 @@ import { Container, ContainerItem } from "./styles";
 interface Data {
   id: number;
   title: string;
+  git?: string;
   img: string;
 }
 
 export function Portfolio() {
-  const [selected, setSelected] = useState("featured");
+  const [selected, setSelected] = useState("front");
   const [data, setData] = useState<Data[]>([] as Data[]);
+  const [nextPage, setNextPage] = useState(6);
+  const [previousPage, setPreviousPage] = useState(0);
 
   const list = [
-    { id: "featured", title: "Featured" },
-    { id: "web", title: "Web App" },
-    { id: "mobile", title: "Mobile App" },
-    { id: "design", title: "Design" },
-    { id: "content", title: "Content" },
+    // { id: "featured", title: "Featured" },
+    { id: "front", title: "Frontend" },
+    { id: "mobile", title: "Mobile" },
+    { id: "back", title: "Backend" },
+    { id: "other", title: "Others" },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
+      case "front":
+        setData(frontPortfolio);
+        setNextPage(6);
+        setPreviousPage(0);
         break;
       case "mobile":
         setData(mobilePortfolio);
+        setNextPage(6);
+        setPreviousPage(0);
         break;
-      case "design":
-        setData(designPortfolio);
+      case "back":
+        setData(backPortfolio);
+        setNextPage(6);
+        setPreviousPage(0);
         break;
-      case "content":
-        setData(contentPortfolio);
+      case "other":
+        setData(otherPortfolio);
+        setNextPage(6);
+        setPreviousPage(0);
         break;
     }
   }, [selected]);
 
+  function handlePreviousPage() {
+    setNextPage(nextPage - 6);
+    setPreviousPage(previousPage - 6);
+  }
+
+  function handleNextPage() {
+    setNextPage(nextPage + 6);
+    setPreviousPage(previousPage + 6);
+  }
+
   return (
     <Container id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Projects</h1>
 
       <ul>
         {list.map((item) => (
@@ -64,13 +81,28 @@ export function Portfolio() {
         ))}
       </ul>
       <ContainerItem>
-        {data.map((item) => (
-          <div className="item" key={item.id}>
-            <img src={item.img} alt="project preview" />
-            <h3>{item.title}</h3>
-          </div>
-        ))}
+        {data.map((item, index) => {
+          if (index < nextPage && index >= previousPage) {
+            return (
+              <div className="item" key={item.id}>
+                <a href={item.git} target="_blank" rel="noreferrer">
+                  <img src={item.img} alt="project preview" />
+                  <h3>{item.title}</h3>
+                </a>
+              </div>
+            );
+          }
+          return null;
+        })}
       </ContainerItem>
+      <div className="containerButton">
+        {previousPage > 0 ? (
+          <button onClick={() => handlePreviousPage()}>Previous Page</button>
+        ) : null}
+        {nextPage < data.length ? (
+          <button onClick={() => handleNextPage()}>Next Page</button>
+        ) : null}
+      </div>
     </Container>
   );
 }

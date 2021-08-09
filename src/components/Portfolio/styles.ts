@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   h1 {
     font-size: 50px;
@@ -17,10 +18,38 @@ export const Container = styled.div`
     list-style: none;
     display: flex;
   }
+
+  .containerButton {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      width: 150px;
+      height: 30px;
+      color: white;
+      background-color: crimson;
+      border: none;
+      border-radius: 10px;
+      font-weight: 500;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
 `;
 
 export const ContainerItem = styled.div`
   width: 70%;
+  height: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +67,14 @@ export const ContainerItem = styled.div`
     color: var(--mainColor);
     transition: all 0.5s ease;
     cursor: pointer;
+
+    a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     h3 {
       position: absolute;

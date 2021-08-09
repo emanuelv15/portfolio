@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div``;
 
 export const List = styled.li`
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 400;
   color: var(--mainColor);
   margin-right: 50px;
   padding: 7px;
@@ -13,5 +14,6 @@ export const List = styled.li`
   &.active {
     background-color: var(--secondaryColor);
     color: var(--mainColor);
+    font-weight: 600;
   }
 `;

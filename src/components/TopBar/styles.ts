@@ -14,6 +14,7 @@ export const Container = styled.div`
   &.active {
     background-color: var(--secondaryColor);
     color: var(--tertiaryColor);
+    box-shadow: none;
   }
 `;
 

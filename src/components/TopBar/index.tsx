@@ -1,4 +1,4 @@
-import { Person, Mail } from "@material-ui/icons";
+import { WhatsApp, MailOutline } from "@material-ui/icons";
 import { Dispatch, SetStateAction } from "react";
 
 import {
@@ -25,12 +25,20 @@ export function TopBar({ menuOpen, setMenuOpen }: TopBarProps) {
             emanuelv15
           </Logo>
           <ItemContainer>
-            <Person className="icon" />
-            <span>+55 (031) 9 8348-1992</span>
+            <WhatsApp className="icon" />
+            <a
+              href="https://api.whatsapp.com/send?phone=55031983481992"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>+55 (031) 9 8348-1992</span>
+            </a>
           </ItemContainer>
           <ItemContainer>
-            <Mail className="icon" />
-            <span>emanuel.v.souza@hotmail.com</span>
+            <MailOutline className="icon" />
+            <a href="mailto:emanuel.v.souza@hotmail.com">
+              <span>emanuel.v.souza@hotmail.com</span>
+            </a>
           </ItemContainer>
         </Left>
         <Right>

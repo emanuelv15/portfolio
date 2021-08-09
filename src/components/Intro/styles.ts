@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  background-color: white;
+  background-color: var(--backgroundDark);
 `;
 
 export const Left = styled.div`
@@ -10,16 +10,17 @@ export const Left = styled.div`
   overflow: hidden;
 
   .imgContainer {
+    margin-top: 15px;
     width: 700px;
     height: 700px;
-    background-color: crimson;
+    background-color: var(--secondaryColor);
     border-radius: 50%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     float: right;
 
-    .img {
+    img {
       height: 90%;
     }
   }
@@ -39,21 +40,21 @@ export const Wrapper = styled.div`
   justify-content: center;
 
   h1 {
-    color: black;
+    color: var(--mainColor);
     font-size: 60px;
     margin: 10px 0;
   }
   h2 {
-    color: black;
+    color: var(--mainColor);
     font-size: 35px;
   }
   h3 {
-    color: black;
+    color: var(--mainColor);
     font-size: 30px;
 
     span {
       font-size: inherit;
-      color: crimson;
+      color: var(--secondaryColor);
     }
 
     .ityped-cursor {
@@ -78,7 +79,7 @@ export const Down = styled.a`
 
   img {
     width: 30px;
-    animation: arrowBlink 2s infinite;
+    animation: arrowBlink 3s infinite;
   }
 
   @keyframes arrowBlink {

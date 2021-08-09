@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: white;
+  background-color: var(--backgroundDark);
   display: flex;
 
   h2 {
-    color: black;
+    color: var(--mainColor);
   }
 
   .left {
@@ -25,6 +25,7 @@ export const Container = styled.div`
     justify-content: center;
 
     h2 {
+      color: var(--secondaryColor);
       font-size: 30px;
     }
 
@@ -37,15 +38,39 @@ export const Container = styled.div`
       justify-content: space-around;
 
       input {
-        width: 300px;
+        width: 80%;
         height: 30px;
         font-size: 14px;
+
+        border: 0px solid;
+        border-color: var(--secondaryColor);
+        border-radius: 5px;
+        color: var(--mainColor);
+        background: transparent;
+        padding: 5px;
+        box-shadow: 0px 0px 15px -5px var(--secondaryColor);
+
+        &::placeholder {
+          color: var(--secondaryColor);
+        }
       }
 
       textarea {
-        width: 300px;
+        width: 80%;
         height: 200px;
         font-size: 14px;
+
+        border: 0px solid;
+        border-color: var(--secondaryColor);
+        border-radius: 5px;
+        color: var(--mainColor);
+        background: transparent;
+        padding: 5px;
+        box-shadow: 0px 0px 15px -5px var(--secondaryColor);
+
+        &::placeholder {
+          color: var(--secondaryColor);
+        }
       }
 
       button {
@@ -63,7 +88,7 @@ export const Container = styled.div`
       }
 
       span {
-        color: green;
+        color: var(--secondaryColor);
       }
     }
   }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: white;
+  background-color: var(--backgroundDark);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,7 +13,7 @@ export const Container = styled.div`
   h1,
   h3,
   h4 {
-    color: black;
+    color: var(--mainColor);
   }
 
   .container {
@@ -29,7 +29,8 @@ export const Card = styled.div`
   width: 250px;
   height: 70%;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px -8px black;
+  background-color: var(--tertiaryColor);
+  box-shadow: 0px 0px 15px -8px var(--secondaryColor);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -63,6 +64,7 @@ export const Card = styled.div`
         border-radius: 50%;
         object-fit: cover;
         margin: 0 30px;
+        box-shadow: 0px 0px 15px -4px var(--secondaryColor);
       }
     }
   }
@@ -70,7 +72,12 @@ export const Card = styled.div`
   .center {
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(250, 244, 245);
+    background-color: var(--tertiaryColor);
+    box-shadow: 0px 0px 15px -8px var(--secondaryColor);
+
+    h3 {
+      color: var(--mainColor);
+    }
   }
 
   .bottom {
@@ -84,7 +91,7 @@ export const Card = styled.div`
     }
 
     h4 {
-      color: gray;
+      color: var(--secondaryColor);
     }
   }
 `;

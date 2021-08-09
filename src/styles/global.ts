@@ -3,10 +3,10 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
   :root {
     /* --mainColor: #15023a; */
-    --background-dark: #082032;
-    --mainColor: #FF4C29;
-    --secondaryColor: #334756;
-    --tertiaryColor: #2C394B;
+    --backgroundDark: #222831;
+    --mainColor: #EEEEEE;
+    --secondaryColor: #F05454;
+    --tertiaryColor: #393E46;
 
   }
 
@@ -33,8 +33,8 @@ export default createGlobalStyle`
   }
 
   body {
-    background: var(--background-dark);
-    color: #FFF;
+    background: var(--backgroundDark);
+    color: var(--mainColor);
     -webkit-font-smoothing: antialiased;
   }
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 0px;
   height: 100vh;
-  background-color: var(--mainColor);
+  background-color: var(--secondaryColor);
   position: fixed;
   top: 0;
   right: 0;
@@ -15,22 +15,24 @@ export const Container = styled.div`
   transition: all 1.5s ease;
 
   &.active {
-    width: 300px;
+    width: 200px;
+    box-shadow: 0px 0px 15px 3px var(--tertiaryColor);
   }
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
-    font-weight: 300;
-    width: 60%;
+    font-size: 22px;
+    font-weight: 400;
+    width: 65%;
 
     li {
       margin-bottom: 25px;
 
       a {
         font-size: inherit;
+        color: var(--tertiaryColor);
       }
 
       &:hover {

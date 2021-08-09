@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: white;
+  background-color: var(--backgroundDark);
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
     font-size: 50px;
-    color: black;
+    color: var(--mainColor);
   }
 
   ul {
@@ -30,12 +30,12 @@ export const ContainerItem = styled.div`
     width: 220px;
     height: 150px;
     border-radius: 20px;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--secondaryColor);
     margin: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--mainColor);
     transition: all 0.5s ease;
     cursor: pointer;
 
@@ -52,7 +52,7 @@ export const ContainerItem = styled.div`
     }
 
     &:hover {
-      background-color: var(--mainColor);
+      background-color: var(--secondaryColor);
 
       img {
         opacity: 0.2;

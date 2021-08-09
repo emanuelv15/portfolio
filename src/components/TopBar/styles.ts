@@ -3,16 +3,17 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: white;
+  background-color: var(--backgroundDark);
   color: var(--mainColor);
   position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1.5s ease;
+  box-shadow: 8px 0px 15px -8px var(--tertiaryColor);
 
   &.active {
-    background-color: var(--mainColor);
-    color: white;
+    background-color: var(--secondaryColor);
+    color: var(--tertiaryColor);
   }
 `;
 
@@ -71,14 +72,14 @@ export const Hamburger = styled.div`
   &.active {
     span {
       &:first-child {
-        background-color: white;
+        background-color: var(--tertiaryColor);
         transform: rotate(45deg);
       }
       &:nth-child(2) {
         opacity: 0;
       }
       &:last-child {
-        background-color: white;
+        background-color: var(--tertiaryColor);
         transform: rotate(-45deg);
       }
     }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: crimson;
+  background-color: var(--secondaryColor);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ export const Slider = styled.div`
     .item {
       width: 700px;
       height: 100%;
-      background-color: white;
+      background-color: var(--backgroundDark);
       border-radius: 20px;
       display: flex;
       align-items: center;
@@ -63,7 +63,7 @@ export const Slider = styled.div`
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background-color: rgb(245, 179, 155);
+            background-color: var(--mainColor);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -74,17 +74,17 @@ export const Slider = styled.div`
           }
 
           h2 {
-            color: black;
+            color: var(--secondaryColor);
             font-size: 20px;
           }
 
           p {
-            color: black;
+            color: var(--mainColor);
             font-size: 13px;
           }
 
           span {
-            color: black;
+            color: var(--tertiaryColor);
             font-size: 12px;
             font-weight: 600;
             text-decoration: underline;

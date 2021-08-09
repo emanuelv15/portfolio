@@ -21,6 +21,7 @@ export const Left = styled.div`
     float: right;
 
     img {
+      margin-bottom: 60px;
       height: 90%;
     }
   }

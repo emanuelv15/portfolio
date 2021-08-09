@@ -11,7 +11,7 @@ export function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Developer", "Junior"],
+      strings: ["Frontend Developer"],
     });
   }, []);
 
@@ -19,7 +19,7 @@ export function Intro() {
     <Container id="intro">
       <Left>
         <div className="imgContainer">
-          <img src="assets/man.png" alt="a man" />
+          <img src="assets/intro.png" alt="a man" />
         </div>
       </Left>
       <Right>
@@ -27,7 +27,7 @@ export function Intro() {
           <h2>Hi There, I'm</h2>
           <h1>Emanuel Vitor</h1>
           <h3>
-            Frontend <span ref={textRef}></span>
+            <span ref={textRef}></span>
           </h3>
         </Wrapper>
         <Down href="#portfolio">

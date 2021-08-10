@@ -1,4 +1,4 @@
-import { GitHub, MailOutline, LinkedIn } from "@material-ui/icons";
+import { GitHub } from "@material-ui/icons";
 import { Dispatch, SetStateAction } from "react";
 
 import {

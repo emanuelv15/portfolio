@@ -15,10 +15,20 @@ export const Container = styled.div`
     &.left {
       left: 100px;
       transform: rotateY(180deg);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2) rotateY(180deg);
+      }
     }
 
     &.right {
       right: 100px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 `;
@@ -84,10 +94,10 @@ export const Slider = styled.div`
           }
 
           span {
-            color: var(--tertiaryColor);
+            color: var(--mainColor);
             font-size: 12px;
             font-weight: 600;
-            text-decoration: underline;
+            text-decoration: none;
             cursor: pointer;
           }
         }
@@ -102,7 +112,9 @@ export const Slider = styled.div`
         overflow: hidden;
 
         img {
-          width: 400px;
+          width: 80%;
+          height: 120%;
+          object-fit: cover;
           transform: rotate(-10deg);
         }
       }

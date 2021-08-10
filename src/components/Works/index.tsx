@@ -26,7 +26,9 @@ export function Works() {
                   </div>
                   <h2>{item.title}</h2>
                   <p>{item.desc}</p>
-                  <span>Projects</span>
+                  <a href={item.git} target="_blank" rel="noreferrer">
+                    <span>Git</span>
+                  </a>
                 </div>
               </div>
               <div className="right">

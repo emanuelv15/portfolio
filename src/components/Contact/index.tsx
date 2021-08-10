@@ -1,11 +1,5 @@
 // import { FormEvent, useState } from "react";
-import {
-  Instagram,
-  WhatsApp,
-  LinkedIn,
-  GitHub,
-  MailOutline,
-} from "@material-ui/icons";
+import { Instagram, LinkedIn, GitHub, MailOutline } from "@material-ui/icons";
 
 import { Container, Item } from "./styles";
 
@@ -32,17 +26,6 @@ export function Contact() {
           >
             <Instagram />
             <h3>Instagram</h3>
-          </a>
-        </Item>
-
-        <Item>
-          <a
-            href="https://api.whatsapp.com/send?phone=55031983481992"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <WhatsApp />
-            <h3>WhatsApp</h3>
           </a>
         </Item>
 

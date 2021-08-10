@@ -6,6 +6,7 @@ export const Container = styled.div`
 
   h2 {
     color: var(--mainColor);
+    margin-bottom: 50px;
   }
 
   .left {
@@ -25,8 +26,8 @@ export const Container = styled.div`
     justify-content: center;
 
     h2 {
-      color: var(--secondaryColor);
-      font-size: 30px;
+      color: var(--mainColor);
+      font-size: 50px;
     }
 
     form {
@@ -89,6 +90,40 @@ export const Container = styled.div`
 
       span {
         color: var(--secondaryColor);
+      }
+    }
+  }
+`;
+
+export const Item = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--mainColor);
+    transition: all 0.3s ease;
+
+    h3 {
+      font-weight: 400;
+      font-size: 25px;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      color: var(--secondaryColor);
+
+      h3 {
+        font-weight: 500;
       }
     }
   }

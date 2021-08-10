@@ -22,7 +22,7 @@ export function Home() {
           <Intro />
           <Portfolio />
           <Works />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
         </Sections>
       </App>

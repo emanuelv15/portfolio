@@ -46,7 +46,7 @@ export function TopBar({ menuOpen, setMenuOpen }: TopBarProps) {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedIn />
+              <LinkedIn className="icon" />
               <span>LinkedIn</span>
             </a>
           </ItemContainer>

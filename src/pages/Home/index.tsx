@@ -4,7 +4,7 @@ import { Contact } from "../../components/Contact";
 import { Intro } from "../../components/Intro";
 import { Menu } from "../../components/Menu";
 import { Portfolio } from "../../components/Portfolio";
-import { Testimonials } from "../../components/Testimonials";
+// import { Testimonials } from "../../components/Testimonials";
 import { TopBar } from "../../components/TopBar";
 import { Works } from "../../components/Works";
 

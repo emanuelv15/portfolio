@@ -34,22 +34,6 @@ export function TopBar({ menuOpen, setMenuOpen }: TopBarProps) {
               <span>GitHub</span>
             </a>
           </ItemContainer>
-          <ItemContainer>
-            <MailOutline className="icon" />
-            <a href="mailto:emanuel.v.souza@hotmail.com">
-              <span>E-mail</span>
-            </a>
-          </ItemContainer>
-          <ItemContainer>
-            <a
-              href="https://www.linkedin.com/in/emanuelv15"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedIn className="icon" />
-              <span>LinkedIn</span>
-            </a>
-          </ItemContainer>
         </Left>
         <Right>
           <Hamburger

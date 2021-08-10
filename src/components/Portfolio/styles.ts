@@ -48,7 +48,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerItem = styled.div`
-  width: 70%;
+  width: 900px;
   height: 60%;
   display: flex;
   align-items: center;

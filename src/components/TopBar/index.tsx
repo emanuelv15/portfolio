@@ -1,4 +1,4 @@
-import { GitHub, MailOutline } from "@material-ui/icons";
+import { GitHub, MailOutline, LinkedIn } from "@material-ui/icons";
 import { Dispatch, SetStateAction } from "react";
 
 import {
@@ -37,7 +37,17 @@ export function TopBar({ menuOpen, setMenuOpen }: TopBarProps) {
           <ItemContainer>
             <MailOutline className="icon" />
             <a href="mailto:emanuel.v.souza@hotmail.com">
-              <span>emanuel.v.souza@hotmail.com</span>
+              <span>E-mail</span>
+            </a>
+          </ItemContainer>
+          <ItemContainer>
+            <a
+              href="https://www.linkedin.com/in/emanuelv15"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LinkedIn />
+              <span>LinkedIn</span>
             </a>
           </ItemContainer>
         </Left>

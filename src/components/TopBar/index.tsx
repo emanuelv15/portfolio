@@ -1,4 +1,4 @@
-import { WhatsApp, MailOutline } from "@material-ui/icons";
+import { GitHub, MailOutline } from "@material-ui/icons";
 import { Dispatch, SetStateAction } from "react";
 
 import {
@@ -25,13 +25,13 @@ export function TopBar({ menuOpen, setMenuOpen }: TopBarProps) {
             emanuelv15
           </Logo>
           <ItemContainer>
-            <WhatsApp className="icon" />
+            <GitHub className="icon" />
             <a
-              href="https://api.whatsapp.com/send?phone=55031983481992"
+              href="https://github.com/emanuelv15"
               target="_blank"
               rel="noreferrer"
             >
-              <span>+55 (031) 9 8348-1992</span>
+              <span>GitHub</span>
             </a>
           </ItemContainer>
           <ItemContainer>

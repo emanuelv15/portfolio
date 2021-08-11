@@ -10,6 +10,10 @@ export const Container = styled.div`
   h1 {
     font-size: 50px;
     color: var(--mainColor);
+
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
   }
 
   ul {
@@ -17,6 +21,13 @@ export const Container = styled.div`
     padding: 0;
     list-style: none;
     display: flex;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .containerButton {
@@ -55,6 +66,11 @@ export const ContainerItem = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 65%;
+  }
+
   .item {
     width: 220px;
     height: 150px;
@@ -68,6 +84,11 @@ export const ContainerItem = styled.div`
     transition: all 0.5s ease;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      width: 150px;
+      height: 120px;
+    }
+
     a {
       width: 100%;
       height: 100%;
@@ -79,6 +100,10 @@ export const ContainerItem = styled.div`
     h3 {
       position: absolute;
       font-size: 20px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     img {
@@ -88,12 +113,14 @@ export const ContainerItem = styled.div`
       z-index: 1;
     }
 
-    &:hover {
-      background-color: var(--secondaryColor);
+    @media (min-width: 769px) {
+      &:hover {
+        background-color: var(--secondaryColor);
 
-      img {
-        opacity: 0.2;
-        z-index: 0;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
       }
     }
   }

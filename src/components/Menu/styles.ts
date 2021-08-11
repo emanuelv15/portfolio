@@ -17,6 +17,10 @@ export const Container = styled.div`
   &.active {
     width: 200px;
     box-shadow: 0px 0px 15px 3px var(--tertiaryColor);
+
+    @media (max-width: 768px) {
+      width: 130px;
+    }
   }
 
   ul {
@@ -27,6 +31,11 @@ export const Container = styled.div`
     font-weight: 400;
     width: 65%;
 
+    @media (max-width: 768px) {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
     li {
       margin-bottom: 25px;
 
@@ -35,8 +44,10 @@ export const Container = styled.div`
         color: var(--tertiaryColor);
       }
 
-      &:hover {
-        font-weight: 500;
+      @media (min-width: 769px) {
+        &:hover {
+          font-weight: 500;
+        }
       }
     }
   }

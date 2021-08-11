@@ -36,12 +36,20 @@ export const Logo = styled.a`
   font-size: 40px;
   font-weight: 700;
   margin-right: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 33px;
+  }
 `;
 
 export const ItemContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 30px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   .icon {
     font-size: 18px;

@@ -12,6 +12,10 @@ export const Container = styled.div`
     position: absolute;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &.left {
       left: 100px;
       transform: rotateY(180deg);
@@ -40,6 +44,12 @@ export const Slider = styled.div`
   left: 0;
   transition: all 1s ease-out;
 
+  @media (max-width: 768px) {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .container {
     width: 100vw;
     display: flex;
@@ -54,6 +64,12 @@ export const Slider = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        width: 90%;
+        height: 200px;
+        margin: 10px 0;
+      }
 
       .left {
         flex: 4;
@@ -78,19 +94,36 @@ export const Slider = styled.div`
             align-items: center;
             justify-content: center;
 
+            @media (max-width: 768px) {
+              width: 20px;
+              height: 20px;
+            }
+
             img {
               width: 25px;
+
+              @media (max-width: 768px) {
+                width: 15px;
+              }
             }
           }
 
           h2 {
             color: var(--secondaryColor);
             font-size: 20px;
+
+            @media (max-width: 768px) {
+              font-size: 11px;
+            }
           }
 
           p {
             color: var(--mainColor);
             font-size: 13px;
+
+            @media (max-width: 768px) {
+              font-size: 7px;
+            }
           }
 
           span {
@@ -99,6 +132,10 @@ export const Slider = styled.div`
             font-weight: 600;
             text-decoration: none;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+              font-size: 7px;
+            }
           }
         }
       }

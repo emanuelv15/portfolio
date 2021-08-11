@@ -5,6 +5,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: var(--backgroundDark);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
@@ -28,6 +32,10 @@ export const Left = styled.div`
     img {
       margin-bottom: 50px;
       height: 90%;
+
+      @media (max-width: 768px) {
+        height: 50%;
+      }
     }
   }
 `;
@@ -47,10 +55,19 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 768px) {
+    padding: 20px;
+    align-items: center;
+  }
+
   h1 {
     color: var(--mainColor);
     font-size: 60px;
     margin: 10px 0;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
   }
   h2 {
     color: var(--mainColor);
@@ -59,6 +76,10 @@ export const Wrapper = styled.div`
   h3 {
     color: var(--mainColor);
     font-size: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
 
     span {
       font-size: inherit;

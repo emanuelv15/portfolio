@@ -4,9 +4,17 @@ export const Container = styled.div`
   background-color: var(--backgroundDark);
   display: flex;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
   h2 {
     color: var(--mainColor);
     margin-bottom: 50px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   .left {
@@ -28,6 +36,10 @@ export const Container = styled.div`
     h2 {
       color: var(--mainColor);
       font-size: 50px;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     form {
@@ -104,6 +116,10 @@ export const Item = styled.div`
   margin-top: 10px;
   overflow: hidden;
 
+  @media (max-width: 768px) {
+    margin-top: 5px;
+  }
+
   a {
     display: flex;
     flex-direction: row;
@@ -116,14 +132,20 @@ export const Item = styled.div`
       font-weight: 400;
       font-size: 25px;
       margin-left: 10px;
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
 
-    &:hover {
-      transform: scale(1.2);
-      color: var(--secondaryColor);
+    @media (min-width: 769px) {
+      &:hover {
+        transform: scale(1.2);
+        color: var(--secondaryColor);
 
-      h3 {
-        font-weight: 500;
+        h3 {
+          font-weight: 500;
+        }
       }
     }
   }

@@ -103,7 +103,7 @@ export const works = [
     icon: "./assets/globe.png",
     title: "Quiz App",
     git: "https://github.com/emanuelv15/quiz-app",
-    desc: "Quiz application with 50 questions, a score counter and an answer timeout. The game consists of answering questions asked within a time limit of 30 seconds, for each question you make a mistake or leave the time to zero, you lose 100 points. And for every question you get right before time runs out, you get 100 points.",
+    desc: "Quiz application with 50 questions, a score counter and an answer timeout. The game consists of answering questions asked within a time limit of 30 seconds, for each question you make a mistake or leave the time to zero, you lose 100 points. And for every question you get right before time runs out, you get 100 points. All questions and answers were taken from the https://opentdb.com/ API.",
     img: "https://raw.githubusercontent.com/emanuelv15/quiz-app/main/.github/home.png",
   },
 ];

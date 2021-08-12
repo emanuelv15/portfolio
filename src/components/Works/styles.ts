@@ -120,21 +120,30 @@ export const Slider = styled.div`
           p {
             color: var(--mainColor);
             font-size: 13px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
 
             @media (max-width: 768px) {
               font-size: 7px;
             }
           }
 
-          span {
-            color: var(--mainColor);
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            cursor: pointer;
+          a {
+            width: 10%;
 
-            @media (max-width: 768px) {
-              font-size: 7px;
+            span {
+              color: var(--mainColor);
+              font-size: 12px;
+              font-weight: 600;
+              text-decoration: none;
+              cursor: pointer;
+
+              @media (max-width: 768px) {
+                font-size: 7px;
+              }
             }
           }
         }

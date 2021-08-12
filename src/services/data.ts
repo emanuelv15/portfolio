@@ -47,6 +47,12 @@ export const frontPortfolio = [
     git: "https://github.com/emanuelv15/ecoleta-frontend-web",
     img: "https://raw.githubusercontent.com/emanuelv15/ecoleta-frontend-web/master/.github/home-ecoleta-web.png",
   },
+  {
+    id: 9,
+    title: "Quiz App",
+    git: "https://github.com/emanuelv15/quiz-app",
+    img: "https://raw.githubusercontent.com/emanuelv15/quiz-app/main/.github/home.png",
+  },
 ];
 
 export const mobilePortfolio = [
@@ -91,6 +97,14 @@ export const works = [
     git: "https://github.com/emanuelv15/truck-finance-mobile",
     desc: "Application developed with the intention that the user can register their vehicles used for transport services and manage their profits and expenses.",
     img: "https://raw.githubusercontent.com/emanuelv15/truck-finance-mobile/master/.github/truck-screen.jpg",
+  },
+  {
+    id: "3",
+    icon: "./assets/globe.png",
+    title: "Quiz App",
+    git: "https://github.com/emanuelv15/quiz-app",
+    desc: "Quiz application with 50 questions, a score counter and an answer timeout. The game consists of answering questions asked within a time limit of 30 seconds, for each question you make a mistake or leave the time to zero, you lose 100 points. And for every question you get right before time runs out, you get 100 points.",
+    img: "https://raw.githubusercontent.com/emanuelv15/quiz-app/main/.github/home.png",
   },
 ];
 

@@ -79,11 +79,12 @@ export const Slider = styled.div`
         justify-content: center;
 
         .leftContainer {
-          width: 90%;
-          height: 70%;
+          width: 95%;
+          height: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: center;
+          padding: 10px;
 
           .imageContainer {
             width: 40px;
@@ -111,6 +112,7 @@ export const Slider = styled.div`
           h2 {
             color: var(--secondaryColor);
             font-size: 20px;
+            margin-top: 3%;
 
             @media (max-width: 768px) {
               font-size: 11px;
@@ -125,24 +127,49 @@ export const Slider = styled.div`
             display: -webkit-box;
             -webkit-line-clamp: 6;
             -webkit-box-orient: vertical;
+            text-align: justify;
+            margin-top: 3%;
 
             @media (max-width: 768px) {
-              font-size: 7px;
+              font-size: 10px;
             }
           }
 
           a {
-            width: 10%;
+            width: 30%;
+            height: 11%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: var(--secondaryColor) 1px solid;
+            background-color: var(--secondaryColor);
+            border-radius: 15%;
+            text-align: center;
+            overflow: hidden;
+            transition: all 1s ease;
+            margin-top: 10%;
+            margin-bottom: 5%;
+
+            &:hover {
+              transform: scale(1.1);
+            }
 
             span {
-              color: var(--mainColor);
-              font-size: 12px;
-              font-weight: 600;
+              color: var(--tertiaryColor);
+              font-size: 14px;
+              font-weight: 500;
               text-decoration: none;
+              text-align: center;
               cursor: pointer;
+              overflow: hidden;
+              transition: all 1s ease;
+
+              &:hover {
+                font-weight: 600;
+              }
 
               @media (max-width: 768px) {
-                font-size: 7px;
+                font-size: 10px;
               }
             }
           }

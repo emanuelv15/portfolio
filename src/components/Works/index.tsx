@@ -26,8 +26,12 @@ export function Works() {
                   </div>
                   <h2>{item.title}</h2>
                   <p>{item.desc}</p>
-                  <a href={item.git} target="_blank" rel="noreferrer">
-                    <span>Git</span>
+                  <a
+                    href={item.link ? item.link : item.git}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>{item.link ? "Test link" : "Git link"}</span>
                   </a>
                 </div>
               </div>

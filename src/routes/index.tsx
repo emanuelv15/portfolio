@@ -1,11 +1,23 @@
+import { Dispatch, SetStateAction } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import { Home } from "../pages/Home";
 
-export function Routes() {
+interface RoutesProps {
+  theme: boolean;
+  setTheme: Dispatch<SetStateAction<boolean>>;
+}
+
+export function Routes({ theme, setTheme }: RoutesProps) {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
+      <Route
+        path="/"
+        exact
+        render={(props) => (
+          <Home {...props} theme={theme} setTheme={setTheme} />
+        )}
+      />
     </Switch>
   );
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 
 import { Contact } from "../../components/Contact";
 import { Intro } from "../../components/Intro";
@@ -10,14 +10,24 @@ import { Works } from "../../components/Works";
 
 import { App, Sections } from "./styles";
 
-export function Home() {
+interface HomeProps {
+  theme: boolean;
+  setTheme: Dispatch<SetStateAction<boolean>>;
+}
+
+export function Home({ theme, setTheme }: HomeProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <App>
         <TopBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Menu
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          theme={theme}
+          setTheme={setTheme}
+        />
         <Sections>
           <Intro />
           <Portfolio />

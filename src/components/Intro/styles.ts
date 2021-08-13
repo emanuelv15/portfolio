@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--backgroundDark);
+  background-color: var(--background);
 
   @media (max-width: 768px) {
     flex-direction: column;

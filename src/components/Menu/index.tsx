@@ -5,9 +5,11 @@ import { Container } from "./styles";
 interface MenuProps {
   menuOpen: boolean;
   setMenuOpen: Dispatch<SetStateAction<boolean>>;
+  theme: boolean;
+  setTheme: Dispatch<SetStateAction<boolean>>;
 }
 
-export function Menu({ menuOpen, setMenuOpen }: MenuProps) {
+export function Menu({ menuOpen, setMenuOpen, theme, setTheme }: MenuProps) {
   return (
     <Container id="menu" className={"" + (menuOpen && "active")}>
       <ul>
@@ -27,6 +29,12 @@ export function Menu({ menuOpen, setMenuOpen }: MenuProps) {
           <a href="#contact">Contact</a>
         </li>
       </ul>
+      <h1 className="light">Light</h1>
+      <label className="switch">
+        <input type="checkbox" onClick={() => setTheme(!theme)} />
+        <span className="slider round"></span>
+      </label>
+      <h1 className="dark">Dark</h1>
     </Container>
   );
 }

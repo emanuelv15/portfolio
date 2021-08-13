@@ -59,7 +59,7 @@ export const Slider = styled.div`
     .item {
       width: 700px;
       height: 100%;
-      background-color: var(--backgroundDark);
+      background-color: var(--background);
       border-radius: 20px;
       display: flex;
       align-items: center;

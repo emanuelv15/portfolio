@@ -1,12 +1,21 @@
 import { createGlobalStyle } from "styled-components";
 
+interface ThemeProps {
+  theme: {
+    background: string;
+    mainColor: string;
+    secondaryColor: string;
+    tertiaryColor: string;
+  };
+}
+
 export default createGlobalStyle`
   :root {
     /* --mainColor: #15023a; */
-    --backgroundDark: #222831;
-    --mainColor: #EEEEEE;
-    --secondaryColor: #F05454;
-    --tertiaryColor: #393E46;
+    --background: ${(props: ThemeProps) => props.theme.background};
+    --mainColor: ${(props: ThemeProps) => props.theme.mainColor};
+    --secondaryColor: ${(props: ThemeProps) => props.theme.secondaryColor};
+    --tertiaryColor: ${(props: ThemeProps) => props.theme.tertiaryColor};
 
   }
 
@@ -18,6 +27,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+
+    transition: all 1s ease;
   }
 
   @media (max-width: 1080px) {

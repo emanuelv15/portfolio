@@ -102,9 +102,16 @@ export const Wrapper = styled.div`
 `;
 
 export const Down = styled.a`
+  /* position: absolute;
+  bottom: 1%;
+  left: 40%; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 1%;
-  left: 40%;
+  width: 100%;
 
   img {
     width: 35px;

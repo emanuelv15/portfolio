@@ -28,7 +28,7 @@ export const Container = styled.div`
     font-size: 20px;
     position: absolute;
     left: 5%;
-    bottom: 5.5%;
+    bottom: 8%;
 
     @media (max-width: 768px) {
       font-size: 15px;
@@ -40,7 +40,7 @@ export const Container = styled.div`
     font-size: 20px;
     position: absolute;
     left: 63%;
-    bottom: 5.5%;
+    bottom: 8%;
 
     @media (max-width: 768px) {
       font-size: 15px;
@@ -79,7 +79,7 @@ export const Container = styled.div`
   .switch {
     position: absolute;
     left: 30%;
-    bottom: 5%;
+    bottom: 7.6%;
     display: inline-block;
     width: 60px;
     height: 34px;

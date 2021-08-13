@@ -104,7 +104,7 @@ export const Slider = styled.div`
               width: 25px;
 
               @media (max-width: 768px) {
-                width: 15px;
+                width: 12px;
               }
             }
           }
@@ -113,6 +113,7 @@ export const Slider = styled.div`
             color: var(--secondaryColor);
             font-size: 20px;
             margin-top: 3%;
+            overflow: hidden;
 
             @media (max-width: 768px) {
               font-size: 11px;
@@ -132,6 +133,8 @@ export const Slider = styled.div`
 
             @media (max-width: 768px) {
               font-size: 10px;
+              -webkit-line-clamp: 4;
+              text-align: start;
             }
           }
 
@@ -150,8 +153,16 @@ export const Slider = styled.div`
             margin-top: 10%;
             margin-bottom: 5%;
 
-            &:hover {
-              transform: scale(1.1);
+            @media (min-width: 769px) {
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+
+            @media (max-width: 768px) {
+              font-size: 10px;
+              width: 40px;
+              height: 11%;
             }
 
             span {
@@ -169,7 +180,7 @@ export const Slider = styled.div`
               }
 
               @media (max-width: 768px) {
-                font-size: 10px;
+                font-size: 8px;
               }
             }
           }

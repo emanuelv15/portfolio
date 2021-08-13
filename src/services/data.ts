@@ -79,7 +79,14 @@ export const backPortfolio = [
   },
 ];
 
-export const otherPortfolio = [];
+export const otherPortfolio = [
+  {
+    id: 1,
+    title: "T-Rex Game",
+    git: "https://github.com/emanuelv15/t-rex-game",
+    img: "https://raw.githubusercontent.com/emanuelv15/t-rex-game/main/.github/home.png",
+  },
+];
 
 export const works = [
   {

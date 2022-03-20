@@ -53,6 +53,12 @@ export const frontPortfolio = [
     git: "https://github.com/emanuelv15/quiz-app",
     img: "https://raw.githubusercontent.com/emanuelv15/quiz-app/main/.github/home.png",
   },
+  {
+    id: 10,
+    title: "WorldTrip",
+    git: "https://github.com/emanuelv15/worldtrip-ignite-challenge",
+    img: "https://raw.githubusercontent.com/emanuelv15/worldtrip-ignite-challenge/master/.github/home.png",
+  },
 ];
 
 export const mobilePortfolio = [
